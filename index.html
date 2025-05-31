@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A heartfelt birthday greeting for Nidhi with animations and photos.">
+  <meta name="keywords" content="birthday, greeting, love, Nidhi">
+  <title>Happy Birthday Nidhi ❤️ by Code_With_Sujal_</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preload" href="countdown.mp3" as="audio">
+  <link rel="preload" href="birthday.mp3" as="audio">
+  <link rel="preload" href="photos.mp3" as="audio">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="preloader" style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: #ffccd5; display: flex; justify-content: center; align-items: center; z-index: 2000; transition: opacity 0.5s;">
+    <div style="font-family: 'Dancing Script', cursive; font-size: 2rem; color: white;"> Loading Special Birthday Wishes...❤️✨</div>
+  </div>
+
+  <div id="countdown" class="page countdown-page">
+    <div class="countdown-number">10</div>
+    <div class="sparkle-container"></div>
+    <div class="floating-elements"></div>
+  </div>
+
+  <div id="page1" class="page page1">
+    <div class="floating-elements"></div>
+    <h1>Happy Birthday My Love ❤️</h1>
+    <h1> </h1>
+    <div class="cake-container">
+      <div class="birthday-cake">
+        <div class="cake">
+          <div class="cake-top"></div>
+          <div class="cake-middle"></div>
+          <div class="cake-bottom"></div>
+          <div class="cake-text">27</div>
+        </div>
+        <div class="cake-plate"></div>
+        <div class="candle candle1"><div class="flame"></div></div>
+        <div class="candle candle2"><div class="flame"></div></div>
+        <div class="candle candle3"><div class="flame"></div></div>
+      </div>
+    </div>
+    <p class="subtitle">You are the beat of my heart<br>Many many happy returns of this day</p>
+    <button class="next-button" onclick="showPage(2)" aria-label="Go to Letter Page">Click Here</button>
+  </div>
+
+  <div id="page2" class="page page2">
+    <div class="confetti-container"></div>
+    <div class="floating-elements"></div>
+    <div class="letter-container">
+      <h2>My Dearest Love❤️,</h2>
+      <p>Though my love for you is one-sided, it's pure and endless. I see you love another, yet in every namaz, I pray God grants you eternal happiness—even if it's not with me.</p>
+      <p>Your rare replies pierce my heart, but I treasure our old chats like precious gems. I'll keep loving you silently, with patience and respect, asking only for your wellbeing in my duas.</p>
+      <p class="signature">Forever Yours,<br>Sujal❤️</p>
+    </div>
+    <button class="next-button" onclick="showPage(3)" aria-label="Go to Photo Gallery">Click Here</button>
+  </div>
+
+  <div id="page3" class="page page3">
+    <div class="floating-elements"></div>
+    <h2>The Hall of Memories</h2>
+    <div class="photo-gallery">
+      <div class="photo-frame">
+        <div class="photo-loader"></div>
+        <img src="Pic1.jpg" alt="Memory 1" loading="lazy" onerror="this.parentElement.classList.add('img-error'); this.src='https://via.placeholder.com/150x187?text=Memory+1';">
+        <div class="photo-caption">Shared Smiles🏵️</div>
+      </div>
+      <div class="photo-frame">
+        <div class="photo-loader"></div>
+        <img src="Pic2.jpg" alt="Memory 2" loading="lazy" onerror="this.parentElement.classList.add('img-error'); this.src='https://via.placeholder.com/150x187?text=Memory+2';">
+        <div class="photo-caption">Forever Memories✨</div>
+      </div>
+      <div class="photo-frame">
+        <div class="photo-loader"></div>
+        <img src="Pic3.jpg" alt="Memory 3" loading="lazy" onerror="this.parentElement.classList.add('img-error'); this.src='https://via.placeholder.com/150x187?text=Memory+3';">
+        <div class="photo-caption">Joyful Times❤️</div>
+      </div>
+      <div class="photo-frame">
+        <div class="photo-loader"></div>
+        <img src="Pic4.jpg" alt="Memory 4" loading="lazy" onerror="this.parentElement.classList.add('img-error'); this.src='https://via.placeholder.com/150x187?text=Memory+4';">
+        <div class="photo-caption">XMas 2024🎉</div>
+      </div>
+      <div class="photo-frame">
+        <div class="photo-loader"></div>
+       <img src="Pic5.jpg" alt="Memory 5" loading="lazy" onerror="this.parentElement.classList.add('img-error'); this.src='https://via.placeholder.com/150x187?text=Memory+5';">
+        <div class="photo-caption">Party Night Vibes🥳</div>
+      </div>
+      <div class="photo-frame">
+        <div class="photo-loader"></div>
+       <img src="Pic6.jpg" alt="Memory 6" loading="lazy" onerror="this.parentElement.classList.add('img-error'); this.src='https://via.placeholder.com/150x187?text=Memory+6';">
+        <div class="photo-caption">London,UK 2024🌸</div>
+      </div>
+      <div class="photo-frame">
+        <div class="photo-loader"></div>
+       <img src="Pic7.jpg" alt="Memory 7" loading="lazy" onerror="this.parentElement.classList.add('img-error'); this.src='https://via.placeholder.com/150x187?text=Memory+7';">
+        <div class="photo-caption">Beautiful Day❤️</div>
+      </div>
+      <div class="photo-frame">
+        <div class="photo-loader"></div>
+       <img src="Pic8.jpg" alt="Memory 8" loading="lazy" onerror="this.parentElement.classList.add('img-error'); this.src='https://via.placeholder.com/150x187?text=Memory+8';">
+        <div class="photo-caption">Gorgeous✨</div>
+      </div>
+    </div>
+    <button class="next-button" onclick="showPage(1)" aria-label="Start Over">Start Again</button>
+  </div>
+
+  <button class="music-toggle" onclick="toggleMusic()" aria-label="Toggle Music">🔊 Music ON</button>
+
+
+  <audio id="countdown-music" loop>
+    <source src="countdown.mp3" type="audio/mpeg">
+    <source src="countdown.ogg" type="audio/ogg">
+  </audio>
+  <audio id="birthday-music" loop>
+    <source src="Happy Birthday Music.mp3" type="audio/mpeg">
+    <source src="Happy Birthday Music.ogg" type="audio/ogg">
+  </audio>
+
+  <audio id="photo-music" loop>
+    <source src="Photo.mp3" type="audio/mpeg">
+    <source src="Photo.ogg" type="audio/ogg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
